@@ -59,13 +59,13 @@
     $historyTable = $('table');
     if (!$historyTable.length){
       $historyContainer.html('');
-      var historyContentHTML = '<table><tr><th>Search Term</th>'+
+      var historyContentHTML = '<div class="message">Recent Searches</div>'+
+        '<table><tr><th>Search Term</th>'+
         '<th>Time Of Search</th><th>Number Of Search Results</th></tr></table>'+
         '<button class="alert">Clear Search History</button>';
       $historyContainer.html(historyContentHTML);
       $historyContainer.find('button').click(function(){
         $historyContainer.html('');
-        $historyContainer.html('<div class="message">Search History Is Empty</div>');
       });
       $historyTable = $('table');
     }

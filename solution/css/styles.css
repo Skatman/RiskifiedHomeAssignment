@@ -21,9 +21,9 @@ body {
 .history-container {
   width: 100%;
   height: 300px;
-  background: yellow;
   display: inline-block;
   vertical-align: top;
+  padding-top: 20px;
 }
 
 .photo-container {
@@ -43,11 +43,32 @@ button {
 }
 
 table {
-  font-size: 20px;
+  font-size: 17px;
+  color: #4e4e4e;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+tr:not(:first-of-type){
+  cursor: pointer;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2
 }
 
 .message {
   font-size: 24px;
+  color: #afadad;
+  margin-bottom: 20px;
 }
 
 .show-more {
@@ -106,8 +127,38 @@ input[type="submit"],
 
 .alert {
   background: lightcoral;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div {
   font-family: sans-serif;
+}
+
+@media only screen and (max-width: 640px) {
+  input[type="text"]{
+    width: 200px;
+    font-size: 14px;
+  }
+
+  input[type="submit"], button {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  input[type="submit"]{
+    width: 90px;
+  }
+
+  td, th {
+      padding-left: 7px;
+      padding-right: 7px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+
+  table {
+    font-size: 14px;
+  }
 }
