@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+
+.main-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background: lightblue;
+  text-align: center;
+  font-size: 0;
+  padding: 20px;
+}
+
+.search-results {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  background: green;
+}
+
+.history-container {
+  width: 50%;
+  height: 300px;
+  background: yellow;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.photo-container {
+  display: inline-block;
+  margin: 5px;
+}
+
+.photo-container img{
+  width: 150px;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  font-size: 20px;
+}
+
+.message {
+  font-size: 24px;
+}
