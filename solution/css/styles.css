@@ -95,7 +95,7 @@ tr:nth-child(odd) {
 
 input {
   -webkit-appearance: none;
-  border-radius: none;
+  border-radius: 0;
 }
 
 input[type="text"]{
