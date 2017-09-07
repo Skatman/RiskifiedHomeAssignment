@@ -9,6 +9,8 @@ body {
   text-align: center;
   font-size: 0;
   padding: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .search-results {
@@ -91,6 +93,10 @@ tr:nth-child(odd) {
   margin-top: 70px;
 }
 
+input {
+  -webkit-appearance: none;
+}
+
 input[type="text"]{
   margin-top: 15px;
   height: 40px;
@@ -105,7 +111,6 @@ input[type="submit"],
 button{
   height: 40px;
   border-radius: 0;
-  -webkit-appearance: none;
   width: auto;
   box-sizing: border-box;
   border: none;
